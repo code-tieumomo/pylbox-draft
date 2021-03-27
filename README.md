@@ -1,1 +1,1 @@
-<h2> Hi, It's just a box!<br><img src="https://media.giphy.com/media/26his8ERHOSxKuWw8/giphy.gif" width="50"></h2>
+<h2> Hi, It's just a box!<br><img src="https://media.giphy.com/media/26his8ERHOSxKuWw8/giphy.gif" width="150"></h2>
