@@ -1,0 +1,12 @@
+/* your styles go here */
+.newest {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.badge {
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    color: #fff;
+}

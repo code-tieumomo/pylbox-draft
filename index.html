@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home | Pylbox</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="all,follow">
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <!-- Lightbox CSS-->
+        <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+        <!-- Google fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;display=swap">
+        <!-- theme stylesheet-->
+        <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+        <!-- Custom stylesheet - for your changes-->
+        <link rel="stylesheet" href="css/custom.css">
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="https://img.icons8.com/pastel-glyph/128/000000/box--v3.png">
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="sidebar-inner d-flex flex-column">
+                <div class="px-4 py-5"><a href="index.html"><img src="https://img.icons8.com/pastel-glyph/256/000000/box--v3.png" alt="" width="90"></a></div>
+                <div class="sidebar-menu-holder flex-grow-1">
+                    <ul class="sidebar-menu list-unstyled">
+                        <li class="mb-2 pb-1">
+                            <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small active" href="index.html">Home</a>
+                        </li>
+                        <li class="mb-2 pb-1">
+                            <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small" href="text.html">Boxes</a>
+                        </li>
+                        <li class="mb-2 pb-1">
+                            <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small" href="detail.html">Add item</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 py-3">
+                    <ul class="list-inline list-social mb-3">
+                        <li class="list-inline-item"><a class="reset-anchor" target="_blank" href="https://www.facebook.com/pyl.walker/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a class="reset-anchor" target="_blank" href="https://www.instagram.com/_pylw/"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a class="reset-anchor" target="_blank" href="https://github.com/code-tieumomo"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-holder">
+            <div class="px-4 d-block d-lg-none">
+                <!-- navbar-->
+                <header class="header">
+                    <nav class="navbar navbar-expand-lg navbar-light px-0">
+                        <button class="navbar-toggler navbar-toggler-right text-sm text-uppercase" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg class="svg-icon svg-icon-heavy svg-icon-sm text-dark">
+                                <use xlink:href="#menu-hamburger-1"> </use>
+                            </svg>
+                        </button><a class="navbar-brand" href="index.html"><img src="https://img.icons8.com/pastel-glyph/256/000000/box--v3.png" alt="" width="50"></a>
+                    </nav>
+                </header>
+            </div>
+
+            <div class="px-4 py-5">
+                <div class="container-fluid">
+                    <!-- <span class="newest">Newest</span> -->
+                    <marquee class="newest" behavior="alternate" direction="left" scrollamount="5">
+                        <a class="view-all" href="">Newest <span class="badge bg-danger">New</span></a>
+                    </marquee>
+                    <style type="text/css">
+                        .newest {
+                            width: 300px;
+                            font-size: 40px;
+                            font-weight: bold;
+                            text-decoration: none;
+                            color: #000;
+                        }
+
+                        .badge {
+                            font-size: 10px;
+                            position: absolute;
+                            top: 0;
+                            color: #fff;
+                        }
+
+                        .view-all {
+                            color: #000;
+                            text-decoration: none;
+                        }
+                    </style>
+
+                    <div id="list-newest" class="masonry-wrapper">
+                        <div data-aos="fade-up-right" class="col-lg-4 col-md-6 grid-item mb-4">
+                            <div class="listing-item">
+                                <div class="position-relative">
+                                    <ul class="list-inline listing-tags m-0">
+                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Creative</a></li>
+                                    </ul>
+                                    <a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
+                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
+                                                <use xlink:href="#arrow-right-1"> </use>
+                                            </svg>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="py-3"><a class="reset-anchor" href="detail.html">
+                                    <h2 class="h5 listing-item-heading">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in" class="col-lg-4 col-md-6 grid-item mb-4">
+                            <div class="listing-item">
+                                <div class="position-relative">
+                                    <ul class="list-inline listing-tags m-0">
+                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Creative</a></li>
+                                    </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
+                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
+                                                <use xlink:href="#arrow-right-1"> </use>
+                                            </svg>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="py-3"><a class="reset-anchor" href="detail.html">
+                                    <h2 class="h5 listing-item-heading">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up-left" class="col-lg-4 col-md-6 grid-item mb-4">
+                            <div class="listing-item">
+                                <div class="position-relative">
+                                    <ul class="list-inline listing-tags m-0">
+                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Creative</a></li>
+                                    </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
+                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
+                                                <use xlink:href="#arrow-right-1"> </use>
+                                            </svg>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="py-3"><a class="reset-anchor" href="detail.html">
+                                    <h2 class="h5 listing-item-heading">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <marquee class="newest" behavior="alternate" direction="left" scrollamount="5">
+                        <a class="view-all" href="">Boxes <span class="badge bg-primary down-position"><i class="fas fa-arrow-right"></i></span></a>
+                    </marquee>
+                    <style type="text/css">
+                        .down-position {
+                            margin-left: 10px;
+                            top: 26px;
+                        }
+                    </style>
+
+                    <div id="list-boxes" class="masonry-wrapper">
+                        <div data-aos="fade-right" class="col-lg-4 col-md-6 grid-item mb-4">
+                            <div class="listing-item">
+                                <div class="position-relative">
+                                    <ul class="list-inline listing-tags m-0">
+                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Box</a></li>
+                                    </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
+                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
+                                                <use xlink:href="#arrow-right-1"> </use>
+                                            </svg>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="py-3"><a class="reset-anchor" href="detail.html">
+                                    <h2 class="h5 listing-item-heading" id="box-0">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="zoom-in" class="col-lg-4 col-md-6 grid-item mb-4">
+                            <div class="listing-item">
+                                <div class="position-relative">
+                                    <ul class="list-inline listing-tags m-0">
+                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Box</a></li>
+                                    </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" src="img/portfolio-7.jpg" alt="">
+                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
+                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
+                                                <use xlink:href="#arrow-right-1"> </use>
+                                            </svg>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="py-3"><a class="reset-anchor" href="detail.html">
+                                    <h2 class="h5 listing-item-heading" id="box-1">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="text-muted" style="background: #0d0d0d">
+                <div class="container-fluid py-5">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="row">
+                                <div class="col-lg-4 mb-4 mb-lg-0">
+                                    <h2 class="h4 text-white mb-4">
+                                        Pylbox
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 172 172" style=" fill:#000000;">
+                                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                <g fill="#ffffff">
+                                                    <path d="M84.65625,19.08125l-64.5,22.84375c-1.6125,0.5375 -2.6875,2.15 -2.6875,3.7625v80.625c0,1.74687 1.075,3.225 2.6875,3.7625l64.5,22.84375c0.40313,0.13438 0.94062,0.26875 1.34375,0.26875c0.26875,0 0.40313,0 0.67188,0h0.13437c0.13437,0 0.26875,-0.13438 0.40313,-0.13438v0l64.5,-22.84375c1.6125,-0.5375 2.6875,-2.15 2.6875,-3.7625v-80.75938v-0.13437c0,-0.13438 0,-0.40313 0,-0.5375v-0.13437c-0.26875,-1.34375 -1.20938,-2.55313 -2.55313,-2.95625l-32.25,-11.42187h-0.13437c-0.80625,-0.26875 -1.88125,-0.40313 -2.82187,0l-62.8875,22.17188c-1.6125,0.5375 -2.6875,2.15 -2.6875,3.7625v14.78125c0,2.28437 1.74687,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74688 4.03125,-4.03125v-11.95938l58.85625,-20.82812l20.425,7.25625l-53.75,19.08125c-1.6125,0.5375 -2.6875,2.01563 -2.6875,3.7625c0,0 0,0 0,0.13438v74.98125l-56.4375,-20.15625v-74.98125l61.8125,-21.90312c2.15,-0.80625 3.225,-3.09062 2.41875,-5.10625c-0.67187,-2.15 -2.95625,-3.225 -5.10625,-2.41875zM90.03125,71.35313l56.4375,-20.02188v72.025l-56.4375,20.02187z"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </h2>
+                                    <p class="text-small">There's a little bit of magic in my box!<br>༼ つ ◕_◕ ༽つ</p>
+                                    <ul class="list-unstyled text-small mb-0 text-white">
+                                        <li class="mb-1"><a class="reset-anchor" href="#"> <i class="fas fa-globe-americas text-muted mr-2 fa-fw"></i>4274  Williams Avenue, California.</a></li>
+                                        <li class="mb-1"><a class="reset-anchor" href="#"> <i class="fas fa-mobile text-muted mr-2 fa-fw"></i>123-456-789</a></li>
+                                        <li class="mb-1"><a class="reset-anchor" href="#"> <i class="fas fa-envelope text-muted mr-2 fa-fw"></i>Jason@example.com</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 mb-4 mb-lg-0">               
+                                    <h2 class="h4 text-white mb-4">Follow me</h2>
+                                    <ul class="list-inline">
+                                        <div class="row text-white text-small">
+                                            <div class="col-6">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="reset-anchor" href="#"><i class="fab fa-facebook-f mr-2 mb-2 fa-fw"></i>Facebook</a></li>
+                                                    <li><a class="reset-anchor" href="#"><i class="fab fa-twitter mr-2 mb-2 fa-fw"></i>Twitter</a></li>
+                                                    <li><a class="reset-anchor" href="#"><i class="fab fa-instagram mr-2 mb-2 fa-fw"></i>Instagram</a></li>
+                                                    <li><a class="reset-anchor" href="#"><i class="fab fa-dribbble mr-2 mb-2 fa-fw"></i>Dribbble</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="reset-anchor" href="#"><i class="fab fa-linkedin-in mr-2 mb-2 fa-fw"></i>Linkedin</a></li>
+                                                    <li><a class="reset-anchor" href="#"><i class="fab fa-pinterest mr-2 mb-2 fa-fw"></i>Pinterest</a></li>
+                                                    <li><a class="reset-anchor" href="#"><i class="fab fa-vimeo mr-2 mb-2 fa-fw"></i>Vimeo</a></li>
+                                                    <li><a class="reset-anchor" href="#"><i class="fab fa-youtube mr-2 mb-2 fa-fw"></i>Youtube</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 mb-4 mb-lg-0">
+                                    <h2 class="h4 text-white mb-4">News</h2>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a class="reset-anchor" href="#"> 
+                                                <div class="media"><img class="rounded-circle" src="img/news-1.jpg" alt="" width="50">
+                                                    <div class="ml-3 media-body">
+                                                        <p class="text-white mb-0">Design is all</p>
+                                                        <p class="small mb-1">10 Aug 2019</p>
+                                                        <p class="text-gray text-small">Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="reset-anchor" href="#"> 
+                                                <div class="media"><img class="rounded-circle" src="img/news-2.jpg" alt="" width="50">
+                                                    <div class="ml-3 media-body">
+                                                        <p class="text-white mb-0">Power is art</p>
+                                                        <p class="small mb-1">23 Dec 2019</p>
+                                                        <p class="text-gray text-small">Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-dark py-4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto">
+                                <div class="row text-white">
+                                    <div class="col-md-6 text-center text-md-left">
+                                        <p class="text-small mb-3 mb-md-0"><span class="text-muted">&copy; All rights reserved - Your company.</span></p>
+                                    </div>
+                                    <div class="col-md-6 text-center text-md-right">
+                                        <p class="text-small mb-0">
+                                            <!-- You are completely free to use this template for your personal use or as a work for your client as long as you keep the link at the template footer pointing to our partner and us.-->
+                                            <!-- If you would prefer removing the backlink from the theme footer, please purchase the attribution-free license at the theme page at https://bootstraptemple.com.                            --><span class="text-muted">Template designed by </span><a class="reset-anchor" href="https://bootstraptemple.com/p/minimal-bootstrap-creative-portfolio">Bootstrap Temple</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- JavaScript files-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/masonry-layout/masonry.pkgd.min.js"></script>
+        <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+        <script src="js/front.js"></script>
+        <script>
+            // ------------------------------------------------------- //
+            //   Inject SVG Sprite - 
+            //   see more here 
+            //   https://css-tricks.com/ajaxing-svg-sprite/
+            // ------------------------------------------------------ //
+            function injectSvgSprite(path) {
+
+                var ajax = new XMLHttpRequest();
+                ajax.open("GET", path, true);
+                ajax.send();
+                ajax.onload = function(e) {
+                    var div = document.createElement("div");
+                    div.className = 'd-none';
+                    div.innerHTML = ajax.responseText;
+                    document.body.insertBefore(div, document.body.childNodes[0]);
+                }
+            }
+            // this is set to BootstrapTemple website as you cannot 
+            // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+            // while using file:// protocol
+            // pls don't forget to change to your domain :)
+            injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
+        </script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000
+            });
+        </script>
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyDHirv0lel40NrnbvQnImYtZ0kJW3jowLQ",
+                authDomain: "pylbox-code-tieumomo.firebaseapp.com",
+                projectId: "pylbox-code-tieumomo",
+                storageBucket: "pylbox-code-tieumomo.appspot.com",
+                messagingSenderId: "1001316735922",
+                appId: "1:1001316735922:web:2fc10f48038d8c7b63a2ab",
+                measurementId: "G-5EPZRH8EH4"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+
+            var defaultDatabase = firebase.database();
+            var boxesRef = firebase.database().ref('boxes');
+            boxesRef.on('value', (snapshot) => {
+                const boxes = snapshot.val();
+                var i = 0;
+                boxes.forEach(function(box){
+                    $("#box-" + i).html(box['name']);
+                    i++;
+                });
+            });
+        </script>
+        <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </body>
+</html>
