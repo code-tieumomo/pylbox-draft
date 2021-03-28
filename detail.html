@@ -32,7 +32,7 @@
                             <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small" href="index.html">Home</a>
                         </li>
                         <li class="mb-2 pb-1">
-                            <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small" href="detail.html">Add item</a>
+                            <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small" href="detail.html">Add new item</a>
                         </li>
                     </ul>
                 </div>
@@ -344,6 +344,7 @@
             var itemsRef = firebase.database().ref('items/' + key);
             itemsRef.on('value', (snapshot) => {
                 const item = snapshot.val();
+                window.document.title = item['title'] + " | Pylbox";
                 $("#item-title").html(item["title"]);
                 $("#item-description").html(item["description"]);
                 $("#item-box").html(item["box"]);

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home | Pylbox</title>
+        <title>Inside a box | Pylbox</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="all,follow">
@@ -29,10 +29,10 @@
                 <div class="sidebar-menu-holder flex-grow-1">
                     <ul class="sidebar-menu list-unstyled">
                         <li class="mb-2 pb-1">
-                            <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small active" href="index.html">Home</a>
+                            <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small" href="index.html">Home</a>
                         </li>
                         <li class="mb-2 pb-1">
-                            <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small" href="add-new-item.html">Add new item</a>
+                            <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small active" href="detail.html">Add new item</a>
                         </li>
                     </ul>
                 </div>
@@ -45,6 +45,7 @@
                 </div>
             </div>
         </div>
+
         <div class="page-holder">
             <div class="px-4 d-block d-lg-none">
                 <!-- navbar-->
@@ -61,110 +62,67 @@
 
             <div class="px-4 py-5">
                 <div class="container-fluid">
-                    <!-- <span class="newest">Newest</span> -->
-                    <marquee class="newest" behavior="alternate" direction="left" scrollamount="5">
-                        <a class="view-all" href="">Newest <span class="badge bg-danger">New</span></a>
-                    </marquee>
-                    <style type="text/css">
-                        .newest {
-                            width: 300px;
-                            font-size: 40px;
-                            font-weight: bold;
-                            text-decoration: none;
-                            color: #000;
-                        }
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <h1 id="item-title">Add new item to box <img src="https://img.icons8.com/pastel-glyph/64/000000/box--v3.png"/></h1>
+                            <p class="text-muted mb-5">*All infomation is required <i class="fas fa-exclamation-triangle"></i></p>
+                        </div>
+                    </div>
 
-                        .badge {
-                            font-size: 10px;
-                            position: absolute;
-                            top: 0;
-                            color: #fff;
-                        }
+                    <div class="row mb-5">
+                        <div id="item-images" class="col-lg-12">
+                            <form>
+                                Name
+                                <input type="text" name="title">
+                            </form>
+                        </div>
+                    </div>
 
-                        .view-all {
-                            color: #000;
-                            text-decoration: none;
-                        }
-                    </style>
-
-                    <div id="list-newest" class="masonry-wrapper">
-                        <div data-aos="fade-up-right" class="col-lg-4 col-md-6 grid-item mb-4">
-                            <div class="listing-item">
+                    <h2 class="h3 mb-4">Related projects</h2>
+                    <div class="row">
+                        <div class="col-lg-4 mb-4">
+                            <div class="listing-item pl-0">
                                 <div class="position-relative">
-                                    <ul class="list-inline listing-tags m-0">
-                                        <li class="list-inline-item"><a id="detail-1" class="reset-anchor font-weight-normal text-gray text-small detail-1" href="detail.html">Creative</a></li>
-                                    </ul>
-                                    <a class="reset-anchor d-block listing-img-holder detail-1" href="detail.html"><img class="img-fluid" id="img-newest-1" src="img/portfolio-1.jpg" alt="" style="max-height: 200px;">
-                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Detail</span>
+                                    <a class="reset-anchor d-block listing-img-holder" href="detail.html">
+                                        <img class="img-fluid rounded-lg" src="img/portfolio-6.jpg" alt="">
+                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
                                             <svg class="svg-icon text-primary svg-icon-sm ml-2">
                                                 <use xlink:href="#arrow-right-1"> </use>
                                             </svg>
                                         </p>
                                     </a>
                                 </div>
-                                <div class="py-3"><a class="reset-anchor detail-1" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id ="title-1">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                <div class="py-3"><a class="reset-anchor" href="detail.html">
+                                    <h2 class="h5 listing-item-heading">Banana Lady</h2></a>
                                     <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="zoom-in" class="col-lg-4 col-md-6 grid-item mb-4">
-                            <div class="listing-item">
+
+                        <div class="col-lg-4 mb-4">
+                            <div class="listing-item pl-0">
                                 <div class="position-relative">
-                                    <ul class="list-inline listing-tags m-0">
-                                        <li class="list-inline-item"><a id="detail-2" class="reset-anchor font-weight-normal text-gray text-small detail-2" href="detail.html">Creative</a></li>
-                                    </ul><a class="reset-anchor d-block listing-img-holder detail-2" href="detail.html"><img class="img-fluid" id="img-newest-2" src="img/portfolio-2.jpg" alt="" style="max-height: 200px;">
-                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Detail</span>
+                                    <a class="reset-anchor d-block listing-img-holder" href="detail.html">
+                                        <img class="img-fluid rounded-lg" src="img/portfolio-4.jpg" alt="">
+                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
                                             <svg class="svg-icon text-primary svg-icon-sm ml-2">
                                                 <use xlink:href="#arrow-right-1"> </use>
                                             </svg>
                                         </p>
                                     </a>
                                 </div>
-                                <div class="py-3"><a class="reset-anchor detail-2" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id ="title-2">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                <div class="py-3"><a class="reset-anchor" href="detail.html">
+                                    <h2 class="h5 listing-item-heading">Treasure Haunted</h2></a>
                                     <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="fade-up-left" class="col-lg-4 col-md-6 grid-item mb-4">
-                            <div class="listing-item">
-                                <div class="position-relative">
-                                    <ul class="list-inline listing-tags m-0">
-                                        <li class="list-inline-item"><a id="detail-3" class="reset-anchor font-weight-normal text-gray text-small detail-3" href="detail.html">Creative</a></li>
-                                    </ul><a class="reset-anchor d-block listing-img-holder detail-3" href="detail.html"><img class="img-fluid" id="img-newest-3" src="img/portfolio-3.jpg" alt="" style="max-height: 200px;">
-                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Detail</span>
-                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
-                                                <use xlink:href="#arrow-right-1"> </use>
-                                            </svg>
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="py-3"><a class="reset-anchor detail-3" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id ="title-3">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
-                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <marquee data-aos="fade-right" class="newest" behavior="alternate" direction="left" scrollamount="5">
-                        <a class="view-all" href="">Boxes <span class="badge bg-primary down-position"><i class="fas fa-arrow-right"></i></span></a>
-                    </marquee>
-                    <style type="text/css">
-                        .down-position {
-                            margin-left: 10px;
-                            top: 26px;
-                        }
-                    </style>
-
-                    <div id="list-boxes" class="masonry-wrapper" style="position: relative; height: 2000px;">
-                        <div data-aos="fade-right" class="col-lg-4 col-md-6 grid-item mb-4">
-                            <div class="listing-item">
+                        <div class="col-lg-4 mb-4">
+                            <div class="listing-item pl-0">
                                 <div class="position-relative">
-                                    <ul class="list-inline listing-tags m-0">
-                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Box</a></li>
-                                    </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" src="img/boxes/foods-box.png" alt="">
+                                    <a class="reset-anchor d-block listing-img-holder" href="detail.html">
+                                        <img class="img-fluid rounded-lg" src="img/portfolio-5.jpg" alt="">
                                         <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
                                             <svg class="svg-icon text-primary svg-icon-sm ml-2">
                                                 <use xlink:href="#arrow-right-1"> </use>
@@ -173,87 +131,7 @@
                                     </a>
                                 </div>
                                 <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id="box-0">Foods</h2></a>
-                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div data-aos="zoom-in" class="col-lg-4 col-md-6 grid-item mb-4">
-                            <div class="listing-item">
-                                <div class="position-relative">
-                                    <ul class="list-inline listing-tags m-0">
-                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Box</a></li>
-                                    </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" src="img/boxes/games-box.png" alt="">
-                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
-                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
-                                                <use xlink:href="#arrow-right-1"> </use>
-                                            </svg>
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id="box-1">Games</h2></a>
-                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div data-aos="fade-left" class="col-lg-4 col-md-6 grid-item mb-4">
-                            <div class="listing-item">
-                                <div class="position-relative">
-                                    <ul class="list-inline listing-tags m-0">
-                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Box</a></li>
-                                    </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" src="img/boxes/codes-box.png" alt="">
-                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
-                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
-                                                <use xlink:href="#arrow-right-1"> </use>
-                                            </svg>
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id="box-2">Codes</h2></a>
-                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div data-aos="fade-right" class="col-lg-4 col-md-6 grid-item mb-4">
-                            <div class="listing-item">
-                                <div class="position-relative">
-                                    <ul class="list-inline listing-tags m-0">
-                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Box</a></li>
-                                    </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" src="img/boxes/musics-box.png" alt="">
-                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
-                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
-                                                <use xlink:href="#arrow-right-1"> </use>
-                                            </svg>
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id="box-0">Musics</h2></a>
-                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div data-aos="zoom-in" class="col-lg-4 col-md-6 grid-item mb-4">
-                            <div class="listing-item">
-                                <div class="position-relative">
-                                    <ul class="list-inline listing-tags m-0">
-                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Box</a></li>
-                                    </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" src="img/boxes/xxx-box.png" alt="">
-                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
-                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
-                                                <use xlink:href="#arrow-right-1"> </use>
-                                            </svg>
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id="box-0">XXX</h2></a>
+                                    <h2 class="h5 listing-item-heading">Best Friends</h2></a>
                                     <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                 </div>
                             </div>
@@ -372,6 +250,7 @@
                 </div>
             </footer>
         </div>
+
         <!-- JavaScript files-->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -436,34 +315,8 @@
             firebase.initializeApp(firebaseConfig);
             firebase.analytics();
 
-            var defaultDatabase = firebase.database();
-
-            var newestRef = firebase.database().ref('items').orderByKey().limitToLast(3);
-            newestRef.on("value", (snapshot) => {
-                const items = snapshot.val();
-                var i = 3;
-                // Object.values(items).forEach(function(item) {
-                //     $("#newest-" + i).html(item['title']);
-                //     $("#img-newest-" + i).attr("src", item['images']['0']);
-                //     i++;
-                // });
-                Object.entries(items).forEach(([key, value]) => {
-                    $(".detail-" + i).attr("href", "detail.html?key=" + key);
-                    $("#detail-" + i).html(value["source"]);
-                    $("#title-" + i).html(value["title"]);
-                    $("#img-newest-" + i).attr("src", value['images']['0']);
-                    i--;
-                });
-            });
-
-            // var boxesRef = firebase.database().ref('boxes');
-            // boxesRef.on('value', (snapshot) => {
-            //     const boxes = snapshot.val();
-            //     var j = 0;
-            //     boxes.forEach(function(box){
-
-            //     });
-            // });
+            var params = new URLSearchParams(location.search);
+            
         </script>
         <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
