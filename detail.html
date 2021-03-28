@@ -65,7 +65,7 @@
                     <div class="row">
                         <div class="col-lg-7">
                             <h1 id="item-title">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h1>
-                            <p class="text-muted mb-5">Loading <img src="img/loading-2.gif" style="width: 24px;"/></p>
+                            <p id="sumary" class="text-muted mb-5">Loading <img src="img/loading-2.gif" style="width: 24px;"/></p>
                         </div>
                     </div>
 
@@ -75,6 +75,7 @@
                         </div>
                         <div class="col-lg-5 position-sticky">
                             <h2>Description</h2>
+                            <img id="image" src="" style="max-width: 300px;">
                             <p id="item-description" class="text-muted">Loading <img src="img/loading-2.gif" style="width: 24px;"/></p>
                             <div class="p-4 bg-light mb-5">
                                 <ul class="list-unstyled mb-0">
@@ -350,13 +351,7 @@
                 $("#item-box").html(item["box"]);
                 $("#item-time").html(new Date(key * 1000));
                 $("#item-source").html(item["source"]);
-                item['images'].forEach(function(image) {
-                    var html = `<a href="img/portfolio-1.jpg" data-lightbox="image-1" data-title="${item['title']}">
-                                    <img class="img-fluid mb-4" src="${image}" alt="">
-                                </a>
-                                <p>Sone thing cool</p>`;
-                    $("#item-images").append(html)
-                });
+                $("#image").attr('src', item['image']);
             });
         </script>
         <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
