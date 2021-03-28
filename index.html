@@ -95,9 +95,9 @@
                             <div class="listing-item">
                                 <div class="position-relative">
                                     <ul class="list-inline listing-tags m-0">
-                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Creative</a></li>
+                                        <li class="list-inline-item"><a id="detail-1" class="reset-anchor font-weight-normal text-gray text-small detail-1" href="detail.html">Creative</a></li>
                                     </ul>
-                                    <a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" id="img-newest-0" src="img/portfolio-1.jpg" alt="" style="max-height: 200px;">
+                                    <a class="reset-anchor d-block listing-img-holder detail-1" href="detail.html"><img class="img-fluid" id="img-newest-0" src="img/portfolio-1.jpg" alt="" style="max-height: 200px;">
                                         <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
                                             <svg class="svg-icon text-primary svg-icon-sm ml-2">
                                                 <use xlink:href="#arrow-right-1"> </use>
@@ -105,8 +105,8 @@
                                         </p>
                                     </a>
                                 </div>
-                                <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id ="newest-0">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                <div class="py-3"><a class="reset-anchor detail-1" href="detail.html">
+                                    <h2 class="h5 listing-item-heading" id ="title-1">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
                                     <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                 </div>
                             </div>
@@ -115,8 +115,8 @@
                             <div class="listing-item">
                                 <div class="position-relative">
                                     <ul class="list-inline listing-tags m-0">
-                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Creative</a></li>
-                                    </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" id="img-newest-1" src="img/portfolio-2.jpg" alt="">
+                                        <li class="list-inline-item"><a id="detail-2" class="reset-anchor font-weight-normal text-gray text-small detail-2" href="detail.html">Creative</a></li>
+                                    </ul><a class="reset-anchor d-block listing-img-holder detail-2" href="detail.html"><img class="img-fluid" id="img-title-1" src="img/portfolio-2.jpg" alt="">
                                         <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
                                             <svg class="svg-icon text-primary svg-icon-sm ml-2">
                                                 <use xlink:href="#arrow-right-1"> </use>
@@ -124,8 +124,8 @@
                                         </p>
                                     </a>
                                 </div>
-                                <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id ="newest-1">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                <div class="py-3"><a class="reset-anchor detail-2" href="detail.html">
+                                    <h2 class="h5 listing-item-heading" id ="title-2">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
                                     <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
                                 </div>
                             </div>
@@ -134,8 +134,8 @@
                             <div class="listing-item">
                                 <div class="position-relative">
                                     <ul class="list-inline listing-tags m-0">
-                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Creative</a></li>
-                                    </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" id="img-newest-2" src="img/portfolio-3.jpg" alt="">
+                                        <li class="list-inline-item"><a id="detail-3" class="reset-anchor font-weight-normal text-gray text-small detail-3" href="detail.html">Creative</a></li>
+                                    </ul><a class="reset-anchor d-block listing-img-holder detail-3" href="detail.html"><img class="img-fluid" id="img-title-2" src="img/portfolio-3.jpg" alt="">
                                         <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
                                             <svg class="svg-icon text-primary svg-icon-sm ml-2">
                                                 <use xlink:href="#arrow-right-1"> </use>
@@ -143,15 +143,15 @@
                                         </p>
                                     </a>
                                 </div>
-                                <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id ="newest-2">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                <div class="py-3"><a class="reset-anchor detail-3" href="detail.html">
+                                    <h2 class="h5 listing-item-heading" id ="title-3">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
                                     <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <marquee class="newest" behavior="alternate" direction="left" scrollamount="5">
+                    <marquee data-aos="fade-right" class="newest" behavior="alternate" direction="left" scrollamount="5">
                         <a class="view-all" href="">Boxes <span class="badge bg-primary down-position"><i class="fas fa-arrow-right"></i></span></a>
                     </marquee>
                     <style type="text/css">
@@ -161,7 +161,7 @@
                         }
                     </style>
 
-                    <div id="list-boxes" class="masonry-wrapper">
+                    <div id="list-boxes" class="masonry-wrapper" style="position: relative; height: 2000px;">
                         <div data-aos="fade-right" class="col-lg-4 col-md-6 grid-item mb-4">
                             <div class="listing-item">
                                 <div class="position-relative">
@@ -176,7 +176,7 @@
                                     </a>
                                 </div>
                                 <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id="box-0">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                    <h2 class="h5 listing-item-heading" id="box-0">Foods</h2></a>
                                     <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                 </div>
                             </div>
@@ -196,7 +196,7 @@
                                     </a>
                                 </div>
                                 <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id="box-1">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                    <h2 class="h5 listing-item-heading" id="box-1">Games</h2></a>
                                     <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                 </div>
                             </div>
@@ -216,7 +216,27 @@
                                     </a>
                                 </div>
                                 <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading" id="box-2">Loading <img src="img/loading-2.gif" style="width: 24px;"/></h2></a>
+                                    <h2 class="h5 listing-item-heading" id="box-2">Codes</h2></a>
+                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-right" class="col-lg-4 col-md-6 grid-item mb-4">
+                            <div class="listing-item">
+                                <div class="position-relative">
+                                    <ul class="list-inline listing-tags m-0">
+                                        <li class="list-inline-item"><a class="reset-anchor font-weight-normal text-gray text-small" href="detail.html">Box</a></li>
+                                    </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
+                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
+                                                <use xlink:href="#arrow-right-1"> </use>
+                                            </svg>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="py-3"><a class="reset-anchor" href="detail.html">
+                                    <h2 class="h5 listing-item-heading" id="box-0">Music</h2></a>
                                     <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                 </div>
                             </div>
@@ -272,22 +292,38 @@
                                     <ul class="list-unstyled mb-0">
                                         <li>
                                             <a class="reset-anchor" href="#"> 
-                                                <div class="media"><img class="rounded-circle" src="img/news-1.jpg" alt="" width="50">
+                                                <div class="media">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+                                                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                            <g fill="#ffffff">
+                                                                <path d="M86,6.88c-43.62952,0 -79.12,35.49048 -79.12,79.12c0,43.62952 35.49048,79.12 79.12,79.12c8.4968,0 16.67739,-1.35929 24.35547,-3.84985c-2.1328,-1.63744 -4.27506,-3.43779 -6.3425,-5.39515c-5.77232,1.48952 -11.78313,2.365 -18.01297,2.365c-39.83176,0 -72.24,-32.40824 -72.24,-72.24c0,-39.83176 32.40824,-72.24 72.24,-72.24c39.83176,0 72.24,32.40824 72.24,72.24c0,3.8872 -0.39253,7.67964 -0.98765,11.40172c2.32544,0.62264 4.54069,1.49855 6.59781,2.63375c0.82216,-4.558 1.26985,-9.24355 1.26985,-14.03547c0,-43.62952 -35.49048,-79.12 -79.12,-79.12zM85.94625,24.03297c-1.89722,0.02966 -3.41223,1.58976 -3.38625,3.48703v48.76469c-2.75235,0.97772 -4.96149,3.07598 -6.07953,5.77438c-1.11804,2.69841 -1.04025,5.74421 0.21406,8.38203l-20.64672,20.64672c-0.89867,0.86281 -1.26068,2.14404 -0.94641,3.34956c0.31427,1.20552 1.2557,2.14696 2.46122,2.46122c1.20552,0.31427 2.48675,-0.04774 3.34956,-0.94641l20.64,-20.64c1.3889,0.66343 2.9086,1.00777 4.44781,1.00781c5.02507,-0.00143 9.31863,-3.62208 10.16843,-8.57478c0.84979,-4.9527 -1.99125,-9.79752 -6.72843,-11.47397v-48.75125c0.01273,-0.92983 -0.35149,-1.82522 -1.00967,-2.48214c-0.65819,-0.65692 -1.55427,-1.01942 -2.48408,-1.00489zM118.68,103.25375c-12.384,0 -22.36,9.97735 -22.36,22.01735c0,18.92 17.19731,30.27334 28.20531,37.49734c3.096,2.064 5.50937,3.44 7.22937,5.16l2.06266,1.72l2.06265,-1.72c0.86,-0.688 1.978,-1.46469 3.225,-2.32469c1.247,-0.86 2.62165,-1.80331 3.99765,-2.83531c11.696,-7.568 28.89735,-18.57734 28.89735,-37.49734c0,-12.04 -9.976,-22.01735 -22.36,-22.01735c-0.731,0 -1.45864,0.04098 -2.17687,0.11422c-4.30941,0.4394 -8.34872,2.15538 -11.69063,4.72328c-0.55698,0.42798 -1.0965,0.88419 -1.6125,1.35719c-4.128,-3.784 -9.632,-6.19469 -15.48,-6.19469zM118.68,110.13375c5.16,0 9.62931,2.408 12.72531,6.88l2.75469,4.13203l2.75469,-4.13203c0.344,-0.516 0.71689,-1.00781 1.12203,-1.47812c2.83598,-3.29219 7.08828,-5.40188 11.60328,-5.40188c8.6,0 15.48,6.88135 15.48,15.13735c0,15.136 -14.45069,24.76531 -25.11469,31.64531c-2.408,1.376 -4.12531,2.75738 -5.84531,3.78938c-1.72,-1.376 -3.43731,-2.41338 -5.84531,-3.78938c-10.664,-6.88 -25.11469,-16.50931 -25.11469,-31.64531c0,-1.032 0.10414,-2.04519 0.30906,-3.02344c1.43445,-6.84775 7.64594,-12.1139 15.17094,-12.1139z"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
                                                     <div class="ml-3 media-body">
                                                         <p class="text-white mb-0">Countday</p>
                                                         <p class="small mb-1">https://countday.netlify.app</p>
-                                                        <p class="text-gray text-small">A page about love !</p>
+                                                        <p class="text-gray text-small">A page about us!</p>
                                                     </div>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
                                             <a class="reset-anchor" href="#"> 
-                                                <div class="media"><img class="rounded-circle" src="img/news-2.jpg" alt="" width="50">
+                                                <div class="media">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+                                                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                            <g fill="#ffffff">
+                                                                <path d="M18.8125,1.34375c-9.675,0 -17.46875,7.79375 -17.46875,17.46875v134.375c0,9.675 7.79375,17.46875 17.46875,17.46875h134.375c9.675,0 17.46875,-7.79375 17.46875,-17.46875v-134.375c0,-9.675 -7.79375,-17.46875 -17.46875,-17.46875zM18.8125,9.40625h134.375c5.24062,0 9.40625,4.16563 9.40625,9.40625v20.15625h-153.1875v-20.15625c0,-5.24062 4.16563,-9.40625 9.40625,-9.40625zM24.1875,20.15625c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125c0,2.28438 1.74687,4.03125 4.03125,4.03125h5.375c2.28438,0 4.03125,-1.74687 4.03125,-4.03125c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125zM45.6875,20.15625c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125c0,2.28438 1.74687,4.03125 4.03125,4.03125h5.375c2.28438,0 4.03125,-1.74687 4.03125,-4.03125c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125zM9.40625,47.03125h153.1875v106.15625c0,5.24062 -4.16563,9.40625 -9.40625,9.40625h-134.375c-5.24062,0 -9.40625,-4.16563 -9.40625,-9.40625zM59.125,79.28125c-3.49375,0 -6.45053,2.28333 -7.25678,5.6427l-10.07812,40.44897c-0.5375,2.15 0.80782,4.29948 2.95782,4.83698c2.15,0.5375 4.29948,-0.80782 4.83698,-2.95782l1.88177,-7.79218c0.26875,0 0.53698,0.13385 0.80573,0.13385h14.37707l1.88178,7.65833c0.40313,1.88125 2.15053,3.09167 3.8974,3.09167c0.26875,0 0.67082,0.00053 0.93957,-0.13385c2.15,-0.5375 3.49532,-2.68698 2.95782,-4.83698l-10.07812,-40.44897c-0.67187,-3.35937 -3.62917,-5.6427 -7.12292,-5.6427zM87.34375,79.28125c-2.28437,0 -4.03125,1.74688 -4.03125,4.03125v43c0,2.28438 1.74688,4.03125 4.03125,4.03125c2.28437,0 4.03125,-1.74687 4.03125,-4.03125v-10.75h6.04688c9.94375,0 18.14063,-8.19687 18.14063,-18.14062c0,-9.94375 -8.19687,-18.14062 -18.14062,-18.14062zM126.3125,79.28125c-2.28437,0 -4.03125,1.74688 -4.03125,4.03125v43c0,2.28438 1.74688,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74687 4.03125,-4.03125v-43c0,-2.28437 -1.74687,-4.03125 -4.03125,-4.03125zM91.375,87.34375h6.04688c5.50937,0 10.07813,4.56875 10.07813,10.07813c0,5.50937 -4.56875,10.07813 -10.07812,10.07813h-6.04687zM59.125,89.22553l5.6427,22.30572h-11.15155z"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
                                                     <div class="ml-3 media-body">
                                                         <p class="text-white mb-0">Pylapi</p>
                                                         <p class="small mb-1">http://pylapi.herokuapp.com</p>
-                                                        <p class="text-gray text-small">A page about api</p>
+                                                        <p class="text-gray text-small">Our api!</p>
                                                     </div>
                                                 </div>
                                             </a>
@@ -386,31 +422,31 @@
 
             var defaultDatabase = firebase.database();
 
-            var newestRef = firebase.database().ref('items');
-            newestRef.on('value', (snapshot) => {
+            var newestRef = firebase.database().ref('items').orderByKey().limitToLast(3);
+            newestRef.on("value", (snapshot) => {
                 const items = snapshot.val();
-                var i = 0;
-                Object.values(items).forEach(function(item) {
-                    $("#newest-" + i).html(item['title']);
-                    $("#img-newest-" + i).attr("src", item['images']['0']);
-                    i++;
-                });
-                // var i = 0;
-                // items.forEach(function(item){
+                var i = 3;
+                // Object.values(items).forEach(function(item) {
                 //     $("#newest-" + i).html(item['title']);
+                //     $("#img-newest-" + i).attr("src", item['images']['0']);
                 //     i++;
                 // });
-            });
-
-            var boxesRef = firebase.database().ref('boxes');
-            boxesRef.on('value', (snapshot) => {
-                const boxes = snapshot.val();
-                var j = 0;
-                boxes.forEach(function(box){
-                    $("#box-" + j).html(box['name']);
-                    j++;
+                Object.entries(items).forEach(([key, value]) => {
+                    $(".detail-" + i).attr("href", "detail.html?key=" + key);
+                    $("#detail-" + i).html(value["source"]);
+                    $("#title-" + i).html(value["title"]);
+                    i--;
                 });
             });
+
+            // var boxesRef = firebase.database().ref('boxes');
+            // boxesRef.on('value', (snapshot) => {
+            //     const boxes = snapshot.val();
+            //     var j = 0;
+            //     boxes.forEach(function(box){
+
+            //     });
+            // });
         </script>
         <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
