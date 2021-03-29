@@ -55,7 +55,15 @@ $("#btn-add").on('click', function(event) {
     }).catch(function(error) {
         new Toast({
             message: '❌ Something went wrong, please try again !',
-            type: 'danger'
+            type: 'danger',
+            customButtons: [
+                {
+                    text: 'View error detail',
+                    onClick: function() {
+                        alert(error);
+                    }
+                }
+            ]
         });
         $("#btn-add").prop('disabled', false);
         $("#btn-add").html('Add');
