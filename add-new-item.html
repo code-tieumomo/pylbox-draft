@@ -75,7 +75,7 @@
 
                     <div class="row mb-5">
                         <div id="item-images" class="col-lg-12">
-                            <form>
+                            <form id="form-add">
                                 <h2>Sumary</h2>
                                 <br>
                                 <table class="tb-add">
@@ -373,16 +373,25 @@
                     detail: detail
                 }).then(function() {
                     new Toast({
-                        message: 'Added new item ✔',
+                        message: '✔ Added new item !',
                         type: 'success',
                         customButtons: [
-                        {
-                            text: 'View item detail',
-                            onClick: function() {
-                                window.open('https://twitter.com/ireaderinokun');
+                            {
+                                text: 'View item detail',
+                                onClick: function() {
+                                    window.open('detail.html?key=' + key);
+                                }
                             }
-                        }
                         ]
+                    });
+                    $("#btn-add").prop('disabled', false);
+                    $("#btn-add").html('Add');
+                    $("#form-add").trigger('reset');
+                    $("#summernote").summernote("reset");
+                }).catch(function(error) {
+                    new Toast({
+                        message: '❌ Something went wrong, please try again !',
+                        type: 'danger'
                     });
                     $("#btn-add").prop('disabled', false);
                     $("#btn-add").html('Add');
