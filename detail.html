@@ -32,7 +32,7 @@
                             <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small" href="index.html">Home</a>
                         </li>
                         <li class="mb-2 pb-1">
-                            <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small" href="detail.html">Add new item</a>
+                            <a class="sidebar-link h6 text-uppercase letter-spacing-2 font-weight-bold text-small" href="add-new-item.html">Add new item</a>
                         </li>
                     </ul>
                 </div>
@@ -70,13 +70,13 @@
                     </div>
 
                     <div class="row mb-5">
-                        <div id="item-images" class="col-lg-7">
+                        <div id="item-detail" class="col-lg-7">
                             <!-- Images go here -->
                         </div>
                         <div class="col-lg-5 position-sticky">
                             <h2>Description</h2>
                             <img id="image" src="" style="max-width: 300px;">
-                            <p id="item-description" class="text-muted">Loading <img src="img/loading-2.gif" style="width: 24px;"/></p>
+                            <p id="item-sumary" class="text-muted">Loading <img src="img/loading-2.gif" style="width: 24px;"/></p>
                             <div class="p-4 bg-light mb-5">
                                 <ul class="list-unstyled mb-0">
                                     <li class="d-flex mb-2">
@@ -89,7 +89,7 @@
                                     </li>
                                     <li class="d-flex">
                                         <h6 class="mb-0">Source:</h6>
-                                        <p class="ml-3 text-muted mb-0"><a id="item-source" class="reset-anchor mr-1" href="#">Loading <img src="img/loading-2.gif" style="width: 24px;"/></a></p>
+                                        <p class="ml-3 text-muted mb-0"><a id="item-source" class="reset-anchor mr-1" href="#" target="_blank">Loading <img src="img/loading-2.gif" style="width: 24px;"/></a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -347,11 +347,13 @@
                 const item = snapshot.val();
                 window.document.title = item['title'] + " | Pylbox";
                 $("#item-title").html(item["title"]);
-                $("#item-description").html(item["description"]);
+                $("#item-sumary").html(item["sumary"]);
                 $("#item-box").html(item["box"]);
                 $("#item-time").html(new Date(key * 1000));
                 $("#item-source").html(item["source"]);
-                $("#image").attr('src', item['image']);
+                $("#item-source").attr('href', item['sourceLink']);
+                $("#image").attr('src', item["image"]);
+                $("#item-detail").html(item["detail"])
             });
         </script>
         <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->

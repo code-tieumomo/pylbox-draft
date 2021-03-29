@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Inside a box | Pylbox</title>
+        <title>Add new item | Pylbox</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="all,follow">
@@ -21,6 +21,8 @@
         <link rel="shortcut icon" href="https://img.icons8.com/pastel-glyph/128/000000/box--v3.png">
         <!-- AOS -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Summernote -->
+        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="sidebar">
@@ -72,69 +74,86 @@
                     <div class="row mb-5">
                         <div id="item-images" class="col-lg-12">
                             <form>
-                                Name
-                                <input type="text" name="title">
+                                <h2>Sumary</h2>
+                                <br>
+                                <table class="tb-add">
+                                    <tr>
+                                        <td>
+                                            <label for="title">Title</label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="title" id="title">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="box">Box</label>
+                                        </td>
+                                        <td>
+                                            <select name="box" id="box">
+                                                <option value="Foods">Foods</option>
+                                                <option value="Games">Games</option>
+                                                <option value="Codes">Codes</option>
+                                                <option value="Musics">Musics</option>
+                                                <option value="XXX">XXX</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="image">Image</label>
+                                        </td>
+                                        <td>
+                                            <input type="file" name="image" id="image">
+                                            <input type="hidden" name="imageConverted" id="imageConverted" value="No image found !">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="source">Source</label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="source" id="source">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="sourceLink">Source Link</label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="sourceLink" id="sourceLink">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="sumary">Sumary</label>
+                                        </td>
+                                        <td>
+                                            <textarea name="sumary" id="sumary"></textarea>
+                                        </td>
+                                    </tr>
+                                </table><br>
+                                <style type="text/css">
+                                    .tb-add {
+                                        margin: 0;
+                                        width: 100%
+                                    }
+
+                                    .tb-add label {
+                                        font-weight: bold;
+                                        margin: 10px 30px 10px 10px;
+                                    }
+
+                                    .tb-add input, .tb-add select, .tb-add textarea {
+                                        width: 100%;
+                                        height: 30px;
+                                    }
+                                </style>
+                                <h2>Detail</h2>
+                                <textarea id="summernote" name="description"></textarea><br>
+                                <button id="btn-add" type="submit" class="btn btn-primary">Add</button>
+                                <button id="btn-reset" type="reset" class="btn btn-secondary">Cancel</button>
                             </form>
-                        </div>
-                    </div>
-
-                    <h2 class="h3 mb-4">Related projects</h2>
-                    <div class="row">
-                        <div class="col-lg-4 mb-4">
-                            <div class="listing-item pl-0">
-                                <div class="position-relative">
-                                    <a class="reset-anchor d-block listing-img-holder" href="detail.html">
-                                        <img class="img-fluid rounded-lg" src="img/portfolio-6.jpg" alt="">
-                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
-                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
-                                                <use xlink:href="#arrow-right-1"> </use>
-                                            </svg>
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading">Banana Lady</h2></a>
-                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 mb-4">
-                            <div class="listing-item pl-0">
-                                <div class="position-relative">
-                                    <a class="reset-anchor d-block listing-img-holder" href="detail.html">
-                                        <img class="img-fluid rounded-lg" src="img/portfolio-4.jpg" alt="">
-                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
-                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
-                                                <use xlink:href="#arrow-right-1"> </use>
-                                            </svg>
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading">Treasure Haunted</h2></a>
-                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 mb-4">
-                            <div class="listing-item pl-0">
-                                <div class="position-relative">
-                                    <a class="reset-anchor d-block listing-img-holder" href="detail.html">
-                                        <img class="img-fluid rounded-lg" src="img/portfolio-5.jpg" alt="">
-                                        <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
-                                            <svg class="svg-icon text-primary svg-icon-sm ml-2">
-                                                <use xlink:href="#arrow-right-1"> </use>
-                                            </svg>
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="py-3"><a class="reset-anchor" href="detail.html">
-                                    <h2 class="h5 listing-item-heading">Best Friends</h2></a>
-                                    <p class="text-small mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -280,7 +299,7 @@
             // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
             // while using file:// protocol
             // pls don't forget to change to your domain :)
-            injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
+            injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
         </script>
         <!-- AOS -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -288,6 +307,17 @@
             AOS.init({
                 duration: 1000,
                 mirror: true
+            });
+        </script>
+        <!-- Summernote -->
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#summernote').summernote({
+                    placeholder: 'Description go here !',
+                    tabsize: 2,
+                    height: 300
+                });
             });
         </script>
         <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
@@ -314,9 +344,38 @@
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
             firebase.analytics();
+            var defaultDatabase = firebase.database();
 
-            var params = new URLSearchParams(location.search);
-            
+            $("#btn-add").on('click', function(event) {
+                event.preventDefault();
+                var title = $("#title").val();
+                var box = $("#box").val();
+                var image = $("#imageConverted").val();
+                var source = $("#source").val();
+                var sourceLink = $("#sourceLink").val();
+                var sumary = $("#sumary").val();
+
+                alert(sumary);
+            });
+        </script>
+        <script type="text/javascript">
+            $("#btn-reset").on('click', function(event) {
+                $("#summernote").summernote("reset");
+            });
+
+            $("#image").on('change', function(event) {
+                if ($("#image")[0].files && $("#image")[0].files[0]) {
+                    var file = $("#image")[0].files[0];
+                    var reader = new FileReader();
+
+                    reader.onloadend = function() {
+                        $("#imageConverted").val(reader.result);
+                    }
+                    reader.readAsDataURL(file);
+                } else {
+                    $("#imageConverted").val("No image found !");
+                }
+            });
         </script>
         <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
