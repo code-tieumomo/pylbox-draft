@@ -23,6 +23,8 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- Summernote -->
         <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+        <!-- ToastJS -->
+        <link rel="stylesheet" type="text/css" href="css/Toast.css">
     </head>
     <body>
         <div class="sidebar">
@@ -320,6 +322,8 @@
                 });
             });
         </script>
+        <!-- ToastJS -->
+        <script type="text/javascript" src="js/Toast.js"></script>
         <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
 
@@ -348,14 +352,41 @@
 
             $("#btn-add").on('click', function(event) {
                 event.preventDefault();
+                $("#btn-add").html('Adding');
+                $("#btn-add").prop('disabled', true);
                 var title = $("#title").val();
                 var box = $("#box").val();
                 var image = $("#imageConverted").val();
                 var source = $("#source").val();
                 var sourceLink = $("#sourceLink").val();
                 var sumary = $("#sumary").val();
+                var detail = $("#summernote").val();
+                var key = Math.ceil(Date.now()/1000);
 
-                alert(sumary);
+                defaultDatabase.ref('items/' + key).set({
+                    title: title,
+                    box: box,
+                    image: image,
+                    source: source,
+                    sourceLink: sourceLink,
+                    sumary: sumary,
+                    detail: detail
+                }).then(function() {
+                    new Toast({
+                        message: 'Added new item ✔',
+                        type: 'success',
+                        customButtons: [
+                        {
+                            text: 'View item detail',
+                            onClick: function() {
+                                window.open('https://twitter.com/ireaderinokun');
+                            }
+                        }
+                        ]
+                    });
+                    $("#btn-add").prop('disabled', false);
+                    $("#btn-add").html('Add');
+                });
             });
         </script>
         <script type="text/javascript">
